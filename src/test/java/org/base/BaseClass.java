@@ -1,4 +1,4 @@
-package org.adactin;
+package org.base;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;

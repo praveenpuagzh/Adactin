@@ -1,8 +1,9 @@
-package org.adactin;
+package org.test;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.base.BaseClass;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -14,6 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.pages.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -21,7 +23,7 @@ public class TestClass extends BaseClass {
 	public static WebDriver driver;
 
 	@BeforeClass
-	public static void beforeclass() {
+	public static void Initialzation() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
